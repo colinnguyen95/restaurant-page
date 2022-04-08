@@ -1,5 +1,4 @@
-import burger from './burgers.jpg';
-import './style.css';
+import tacos from './tacos.jpg';
 
 // const homePageTitle = () => {
 //     const header = document.createElement('h1');
@@ -19,23 +18,22 @@ import './style.css';
 //     return text;
 // }
 
-const homePage = () => {
-    const homePage = document.createElement('div');
-    homePage.classList.add('page');
+const menu = () => {
+    const menu = document.createElement('div');
+    menu.classList.add('page');
 
     const header = document.createElement('h1');
-    header.textContent = 'Restaurant Page';
+    header.textContent = 'Menu Page';
 
     const img = document.createElement('img');
-    img.src = burger;
+    img.src = tacos;
 
     const text = document.createElement('p');
     text.textContent = "This restaurant has the best food ever!";
 
-    homePage.append(header, img, text);
+    menu.append(header, img, text);
 
-    return homePage;
+    return menu;
 }
 
-export { homePage };
-// export { homePageTitle, homePageImg, homePageText };
+export { menu };
