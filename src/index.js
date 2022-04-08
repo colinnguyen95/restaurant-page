@@ -2,6 +2,7 @@
 // import { homePage, homePageTitle, homePageImg, homePageText } from './homepage';
 import { homePage } from './homepage';
 import { menu } from './menu';
+import { contact } from './contact';
 import navBar from './navbar';
 
 const content = document.querySelector('#content');
@@ -29,7 +30,7 @@ function myFunction(e) {
         content.appendChild(menu());
     }
     if(pageChoice === 'contact'){
-        content.appendChild(menu());
+        content.appendChild(contact());
     }
 }
 content.appendChild(homePage());

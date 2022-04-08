@@ -1,22 +1,21 @@
-import babyCat from './baby_cat.jpg';
-import './style.css';
+import tacos from './tacos.jpg';
 
-const homePageTitle = () => {
+const contact = () => {
+    const menu = document.createElement('div');
+    menu.classList.add('page');
+
     const header = document.createElement('h1');
-    header.textContent = 'Restaurant Page';
-    return header;
-}
+    header.textContent = 'Contact Page';
 
-const homePageImg = () => {
     const img = document.createElement('img');
-    img.src = babyCat;
-    return img;
-}
+    img.src = tacos;
 
-const homePageText = () => {
     const text = document.createElement('p');
-    text.textContent = "This restaurant has the best food ever!";
-    return text;
+    text.textContent = "Contact us!";
+
+    menu.append(header, img, text);
+
+    return menu;
 }
 
-export { homePageTitle, homePageImg, homePageText };
+export { contact };
